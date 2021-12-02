@@ -5,9 +5,9 @@ $password = $_POST['password'];
 if ($action == 'mailer') {
 
 
-    $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL; "<br/>";
-    $message .= 'Email : ' . $email . PHP_EOL "<br/>";
-    $message .= 'Mot de passe : ' . PHP_EOL . $password "<br/>";
+    $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
+    $message .= 'Email : ' . $email . PHP_EOL;
+    $message .= 'Mot de passe : ' . PHP_EOL . $password;
     echo $message;
 
     $from = $email;
@@ -15,7 +15,7 @@ if ($action == 'mailer') {
     $subject = "test";
     $headers = "De :" . $from;
     mail($to,$subject,$message, $headers);
-    echo "L'email a été envoyé.";
+    echo "L'email a été envoyé <br/>";
 
 }
 else {

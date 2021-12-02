@@ -3,9 +3,11 @@ include 'utils.inc.php';
 ?>
 
 <form action="data-processing.php" method="post">
+    <label for="identifiant">Identifiant : </label>
     <input type="text" name="identifiant"><br/>
+    <label for="sexe">Sexe : </label>
     <input type="radio" name="sexe"><br/>
-    <label for="email">email </label>
+    <label for="email">email : </label>
     <input type="text" name="email"><br/>
     <input type="password" name="password"><br/>
     <input type="password" name="verifpassword"><br/>
