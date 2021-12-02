@@ -11,7 +11,7 @@ if ($action == 'mailer') {
     echo $message;
 
     $from = $email;
-    $to = "enzovargaspro@gmail.com";
+    $to = "enzovargaspro83520@gmail.com";
     $subject = "test";
     $headers = "De :" . $from;
     mail($to,$subject,$message, $headers);
