@@ -1,6 +1,6 @@
 <?php
-include 'index.php';
-
+include 'index.php'; ?>
+<?php
 $action = $_POST['action'];
 $email = $_POST['email'];
 $password = $_POST['password'];
