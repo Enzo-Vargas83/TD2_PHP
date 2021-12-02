@@ -1,7 +1,10 @@
 <form action="data-processing.php" method="post">
     <input type="text" name="identifiant"><br/>
     <input type="radio" name="sexe"><br/>
-    <input type="text" name="email"><br/>
+    <div>
+        <label for="email">email </label>
+        <input type="text" name="email"><br/>
+    </div>
     <input type="password" name="password"><br/>
     <input type="password" name="verifpassword"><br/>
     <input type="text" name="numtel"><br/>
