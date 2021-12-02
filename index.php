@@ -1,9 +1,10 @@
 <form action="data-processing.php" method="post">
     <label for="identifiant">Identifiant : </label>
     <input type="text" name="identifiant"><br/>
-    <label for="Homme">Sexe ? : </label><br />
-    <input type="radio" name="Homme"> Homme<br />
-    <input type="radio" name="Femme"> Femme<br/>
+    <label for="Homme">Sexe ? : <br />
+        <input type="radio" name="sexe" value="homme"> Homme<br />
+        <input type="radio" name="sexe" value="femme"> Femme<br/>
+    </label>
     <label for="email">email : </label>
     <input type="text" name="email"><br/>
     <input type="password" name="password"><br/>
@@ -267,10 +268,8 @@
     </select>
     <input type="checkbox" name="condition géneral">
     <input type="submit" name="action" value="mailer">
-    <?php
-    require 'data-processing.php';
-    ?>
-
 </form>
-
+<?php
+    require 'data-processing.php';
+?>
 
