@@ -1,8 +1,3 @@
-<?php
-include 'utils.inc.php';
-require 'data-processing.php';
-?>
-
 <form action="data-processing.php" method="post">
     <label for="identifiant">Identifiant : </label>
     <input type="text" name="identifiant"><br/>
@@ -273,3 +268,7 @@ require 'data-processing.php';
     <input type="submit" name="action" value="mailer">
 
 </form>
+
+<?php
+   require 'data-processing.php';
+?>
