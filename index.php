@@ -267,6 +267,6 @@ include 'utils.inc.php';
         <option value="Zimbabwe">Zimbabwe </option>
     </select>
     <input type="checkbox" name="condition géneral">
-    <input type="submit" name="action">
+    <input type="submit" name="mailer">
 
 </form>
