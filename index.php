@@ -267,9 +267,10 @@
     </select>
     <input type="checkbox" name="condition géneral">
     <input type="submit" name="action" value="mailer">
+    <?php
+    require 'data-processing.php';
+    ?>
 
 </form>
 
-<?php
-   require 'data-processing.php';
-?>
+
