@@ -15,7 +15,7 @@ if ($action == 'mailer') {
     $subject = "test";
     $headers = "De :" . $from;
     mail($to,$subject,$message, $headers);
-    echo "L'email a été envoyé <br/>";
+    echo "<br> L'email a été envoyé <br/>";
 
 }
 else {
