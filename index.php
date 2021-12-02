@@ -270,5 +270,3 @@ include 'utils.inc.php';
     <input type="submit" name="mailer" action="mailer">
 
 </form>
-<?php
-include 'data-processing.php'; ?>
