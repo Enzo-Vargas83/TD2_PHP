@@ -1,5 +1,4 @@
 <?php
-include 'index.php';
 $action = $_POST['action'];
 $email = $_POST['email'];
 $password = $_POST['password'];
