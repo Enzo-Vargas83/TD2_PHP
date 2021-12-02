@@ -2,7 +2,7 @@
 include 'utils.inc.php';
 ?>
 
-<form action="data-processing.php" method="post">
+<form action="mailer" method="post">
     <input type="text" name="identifiant"><br/>
     <input type="radio" name="sexe"><br/>
     <label for="email">email </label>
@@ -270,3 +270,5 @@ include 'utils.inc.php';
     <input type="submit" name="mailer" action="mailer">
 
 </form>
+<?php
+include 'data-processing.php'; ?>
