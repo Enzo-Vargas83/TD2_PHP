@@ -1,9 +1,9 @@
 <form action="data-processing.php" method="post">
     <label for="identifiant">Identifiant : </label>
     <input type="text" name="identifiant"><br/>
-    <label for="Homme">Sexe ? : </label>
-    <input type="radio" name="Homme"><br />
-    <input type="radio" name="Femme"><br/>
+    <label for="Homme">Sexe ? : </label><br />
+    <input type="radio" name="Homme"> Homme<br />
+    <input type="radio" name="Femme"> Femme<br/>
     <label for="email">email : </label>
     <input type="text" name="email"><br/>
     <input type="password" name="password"><br/>
