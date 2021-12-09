@@ -8,7 +8,8 @@
     <label for="email">email : </label>
     <input type="text" name="email"><br/>
     <input type="password" name="password"><br/>
-    <input type="password" name="verifpassword"><br/>
+    <input type="password" name="verifpassword">
+    <label> num tel </label>
     <input type="text" name="numtel"><br/>
     <select name="pays">
         <option value="France" selected="selected">France </option>
