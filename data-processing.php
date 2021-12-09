@@ -21,10 +21,21 @@
      } else {
          echo '<br/><strong>Bouton non géré !</strong><br/>';
 
-         $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
-             . $num . '\', ' . … . ')';
+     }
+     require 'base.php';
+     $dbLink = mysqli_connect(mysql-vargas.alwaysdata.net, vargas, lolo83520);
+     $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
+         . $num . '\', ' . … . ')';
+
+     if (!($dbResult = mysqli_query($dbLink, $query))) {
+         echo 'Erreur dans requête<br />';
+         // Affiche le type d'erreur.
+         echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
+         // Affiche la requête envoyée.
+         echo 'Requête : ' . $query . '<br/>';
+         exit();
      }
 
-     require 'base.php';
+
  }
 ?>
