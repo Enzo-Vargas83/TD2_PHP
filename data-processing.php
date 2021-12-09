@@ -23,7 +23,7 @@
 
      }
      require 'base.php';
-     $dbLink = mysqli_connect(mysql-vargas.alwaysdata.net, vargas, lolo83520);
+     $dbLink = mysqli_connect('mysql-vargas.alwaysdata.net', 'vargas', 'lolo83520');
      $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
          . $num . '\', ' . … . ')';
 
