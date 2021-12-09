@@ -1,5 +1,4 @@
 <?php
- require 'base.php';
  if (!empty($_POST)) {
      $action = $_POST['action'];
      $id = $_POST['identifiant'];
@@ -26,6 +25,9 @@
              . $num . '\', ' . … . ')';
      }
 
+     require 'base.php';
+     $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520)
+     or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
      if (!($dbResult = mysqli_query($dbLink, $query))) {
          echo 'Erreur dans requête<br />';
          // Affiche le type d'erreur.
