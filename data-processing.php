@@ -6,6 +6,7 @@
      $password = $_POST['password'];
      $pays = $_POST['pays'];
      $num = $_POST['numtel'];
+     $genre = $_POST['sexe'];
      if ($action == 'mailer') {
 
          $message = 'Voici vos identifiants d\'inscription :' . $id . PHP_EOL;
@@ -22,10 +23,9 @@
          echo '<br/><strong>Bouton non géré !</strong><br/>';
 
      }
-     require 'base.php';
      $dbLink = mysqli_connect('mysql-vargas.alwaysdata.net', 'vargas', 'lolo83520', 'vargas_td2');
-     $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
-         . $num . '\')';
+     $query = 'INSERT INTO user (pays, Num_tel, mail, Genre) VALUES (\'' . $pays . '\', \''
+         . $num . '\',\'' . $email . '\', \'' . $genre . '\')';
 
      if (!($dbResult = mysqli_query($dbLink, $query))) {
          echo 'Erreur dans requête<br />';
