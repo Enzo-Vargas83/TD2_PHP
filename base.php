@@ -1,6 +1,6 @@
 <?php
 
-    $dbLink = mysqli_connect('mysql-vargas.alwaysdata.net', 'vargas', 'lolo83520', 'user')
+    $dbLink = mysqli_connect('mysql-vargas.alwaysdata.net', 'vargas', 'lolo83520', 'vargas_td2')
     or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
 
     $query = "SELECT Num_tel, Pays date FROM user";
