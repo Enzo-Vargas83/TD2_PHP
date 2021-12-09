@@ -20,20 +20,20 @@
          echo "<br> L'email a été envoyé <br/>";
      } else {
          echo '<br/><strong>Bouton non géré !</strong><br/>';
-     }
-     $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
-         . $num . '\', ' . … . ')';
+
+         $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
+             . $num . '\', ' . … . ')';
      }
 
-    $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520);
-    if(!($dbResult = mysqli_query($dbLink, $query)))
-    {
-        echo 'Erreur dans requête<br />';
-        // Affiche le type d'erreur.
-        echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
-        // Affiche la requête envoyée.
-        echo 'Requête : ' . $query . '<br/>';
-        exit();
-    }
-
+     $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520);
+     $query = 'SELECT Num_tel, Pays date FROM user';
+     if (!($dbResult = mysqli_query($dbLink, $query))) {
+         echo 'Erreur dans requête<br />';
+         // Affiche le type d'erreur.
+         echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
+         // Affiche la requête envoyée.
+         echo 'Requête : ' . $query . '<br/>';
+         exit();
+     }
+ }
 ?>
