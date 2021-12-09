@@ -1,4 +1,5 @@
 <?php
+ require 'base.php';
  if (!empty($_POST)) {
      $action = $_POST['action'];
      $id = $_POST['identifiant'];
@@ -25,8 +26,6 @@
              . $num . '\', ' . … . ')';
      }
 
-     $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520);
-     $query = 'SELECT Num_tel, Pays date FROM user';
      if (!($dbResult = mysqli_query($dbLink, $query))) {
          echo 'Erreur dans requête<br />';
          // Affiche le type d'erreur.
