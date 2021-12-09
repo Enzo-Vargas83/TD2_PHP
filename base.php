@@ -20,7 +20,6 @@
 
     while($dbRow = mysqli_fetch_assoc($dbResult))
     {
-        echo $dbRow['Identifiant'] . '<br/>';
         echo $dbRow['Num_tel'] . '<br/>';
         echo $dbRow['Pays'] . '<br/>';
         echo '<br/><br/>';

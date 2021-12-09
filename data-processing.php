@@ -21,8 +21,8 @@
      } else {
          echo '<br/><strong>Bouton non géré !</strong><br/>';
      }
-     $query = 'INSERT INTO user (identifiant, pays, Num_tel) VALUES (\'' . $id . '\', \''
-         . $pays . '\', ' . $num . ')';
+     $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
+         . $num . '\', ' . … . ')';
      }
 
     $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520);
