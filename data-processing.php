@@ -23,8 +23,9 @@
 
      }
      require 'base.php';
-     $dbLink = mysqli_connect('mysql-vargas.alwaysdata.net', 'vargas', 'lolo83520');
-     $query = 'INSERT INTO user (pays, Num_tel) VALUES ($pays, $num)';
+     $dbLink = mysqli_connect('mysql-vargas.alwaysdata.net', 'vargas', 'lolo83520', 'vargas_td2');
+     $query = 'INSERT INTO user (pays, Num_tel) VALUES (\'' . $pays . '\', \''
+         . $num . '\')';
 
      if (!($dbResult = mysqli_query($dbLink, $query))) {
          echo 'Erreur dans requête<br />';
