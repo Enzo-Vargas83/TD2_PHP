@@ -6,7 +6,7 @@
     mysqli_select_db($dbLink , user) or die('Erreur dans la sélection de la base : ' . mysqli_error($dbLink)
     );
 
-    $query = 'SELECT id, email, date FROM user';
+    $query = 'SELECT Num_tel, Pays date FROM user';
 
 
     if (!($dbResult = mysqli_query($dbLink, $query))) {
