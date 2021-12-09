@@ -1,13 +1,15 @@
 <?php
  if (!empty($_POST)) {
      $action = $_POST['action'];
+     $id = $_POST['identifiant'];
      $email = $_POST['email'];
      $password = $_POST['password'];
+     $pays = $_POST['pays'];
+     $num = $_POST['numtel'];
      if ($action == 'mailer') {
 
-         $message = 'Voici vos identifiants d\'inscription :' . PHP_EOL;
+         $message = 'Voici vos identifiants d\'inscription :' . $id . PHP_EOL;
          $message .= 'Email : ' . $email . PHP_EOL;
-         $message .= 'Mot de passe : ' . PHP_EOL . $password;
          echo $message;
 
          $from = $email;
@@ -19,5 +21,19 @@
      } else {
          echo '<br/><strong>Bouton non géré !</strong><br/>';
      }
- }
+     $query = 'INSERT INTO user (identifiant, pays, Num_tel) VALUES (\'' . $id . '\', \''
+         . $pays . '\', ' . $num . ')';
+     }
+
+    $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520);
+    if(!($dbResult = mysqli_query($dbLink, $query)))
+    {
+        echo 'Erreur dans requête<br />';
+        // Affiche le type d'erreur.
+        echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
+        // Affiche la requête envoyée.
+        echo 'Requête : ' . $query . '<br/>';
+        exit();
+    }
+
 ?>
