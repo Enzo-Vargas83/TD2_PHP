@@ -26,15 +26,5 @@
      }
 
      require 'base.php';
-     $dbLink = mysqli_connect(vargas_td2, vargas, lolo83520)
-     or die('Erreur de connexion au serveur : ' . mysqli_connect_error());
-     if (!($dbResult = mysqli_query($dbLink, $query))) {
-         echo 'Erreur dans requête<br />';
-         // Affiche le type d'erreur.
-         echo 'Erreur : ' . mysqli_error($dbLink) . '<br/>';
-         // Affiche la requête envoyée.
-         echo 'Requête : ' . $query . '<br/>';
-         exit();
-     }
  }
 ?>
